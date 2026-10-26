@@ -437,7 +437,7 @@ References:
 
 </details>
 
-The latest changes in the ESPHome (deprecation of the custom components) triggered a work to implement an external [TAS5805M DAC ESPHome component](https://github.com/mrtoy-me/esphome-tas5805m). It took some time, but this driver implements a few very important features of the TAS5805M DAC that can not only be used in the device configuration but also in various automations and complex logic. Worth noting:
+The latest changes in the ESPHome (deprecation of the custom components) triggered a work to implement an external [TAS58xx DAC ESPHome component](https://github.com/alextrical/esphome-tas58xx). It took some time, but this driver implements a few very important features of the TAS5805M DAC that can not only be used in the device configuration but also in various automations and complex logic. Worth noting:
 
 - Possibility to configure Analog Gain (depending on the power supply you have, more details [here](https://github.com/sonocotta/esp32-tas5805m-dac/#digital-volume-and-analog-gain)) | 
 - Advanced digital volume configuration (set minimum, maximum, and step value)
@@ -777,7 +777,7 @@ All of the above are available right now for experimentation. I'm keen to hear y
 
 - [X] - Bare [I2S TAS5805M library](https://github.com/sonocotta/esp32-tas5805m-dac)
 - [X] - [espragus-snapclient](https://sonocotta.github.io/esparagus-snapclient/) software with self-hosted UI (WIP)
-- [X] - [ESPHome driver](https://github.com/mrtoy-me/esphome-tas5805m) with UI in the Home Assistant
+- [X] - [ESPHome driver](https://github.com/alextrical/esphome-tas58xx) with UI in the Home Assistant
 - [ ] - [squeezelite-esp32](https://sonocotta.github.io/esp32-audio-dock/)
 
 ### Louder and Amped Esparagus power considerations
