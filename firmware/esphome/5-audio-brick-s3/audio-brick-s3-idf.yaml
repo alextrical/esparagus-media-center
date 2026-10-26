@@ -16,15 +16,15 @@ substitutions:
 
   # ===== Board-Specific Pinouts =====
   # I2S audio pins
-  i2s_lrclk_pin: GPIO15
-  i2s_bclk_pin: GPIO14
-  i2s_dout_pin: GPIO16
+  i2s_lrclk_pin: GPIO7
+  i2s_bclk_pin: GPIO8
+  i2s_dout_pin: GPIO9
 
   # TAS5815
   tas58xx_variant: TAS5815
-  tas58xx_enable_pin: GPIO17
-  i2c_sda_pin: GPIO8
-  i2c_scl_pin: GPIO9
+  tas58xx_enable_pin: GPIO16
+  i2c_sda_pin: GPIO5
+  i2c_scl_pin: GPIO6
 
   # ===== DAC Overrides (optional) =====
   # tas58xx_dac_mode: PBTL 
@@ -41,10 +41,10 @@ substitutions:
   # spi_mosi_pin: GPIO11
   # spi_miso_pin: GPIO13
   
-  # Display control pins
-  display_cs_pin: GPIO47
-  display_dc_pin: GPIO38
-  display_reset_pin: GPIO48
+  # # Display control pins
+  # display_cs_pin: GPIO47
+  # display_dc_pin: GPIO38
+  # display_reset_pin: GPIO48
 
   # # Ethernet pins (if using ethernet instead of wifi)
   # eth_cs_pin: GPIO10
@@ -56,8 +56,8 @@ esphome:
   friendly_name: ${friendly_name}
   min_version: 2026.1.4
   name_add_mac_suffix: false
-  platformio_options:
-    board_build.flash_mode: dio
+  # platformio_options:
+  #   board_build.flash_mode: dio
 
 esp32:
   variant: ESP32S3
