@@ -88,10 +88,10 @@ media_player:
             - media_player.volume_set:
                 id: external_media_player
                 volume: !lambda "return id(current_volume);"
-            - if:
-                condition:
-                  lambda: return ${media_player_led_control};
-                then:
-                  - light.turn_off:
-                      id: rgb_front_led
+            # - if:
+            #     condition:
+            #       lambda: return ${media_player_led_control};
+            #     then:
+            #       - light.turn_off:
+            #           id: rgb_front_led
             - lambda: id(announcement_triggered) = false;
